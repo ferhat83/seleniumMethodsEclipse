@@ -25,9 +25,9 @@ public class MouseOverConcept {
 			
 			//D- navigate to the web site
 			driver.get("https://www.spicejet.com/");
-			driver.manage().window().maximize();
-			 
-	 }
+			driver.manage().window().maximize(); 
+			  
+	 } 
 	 @Test
 	 public void mouseMoveOver() throws InterruptedException {
 		 // create object to action class witch is selenium class

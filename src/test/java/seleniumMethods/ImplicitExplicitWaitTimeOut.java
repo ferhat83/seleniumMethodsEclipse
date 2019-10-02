@@ -20,11 +20,11 @@ public class ImplicitExplicitWaitTimeOut {
 		driver.manage().deleteAllCookies();
 		//it is recommended to start all the previous methods and add dynamic wait
 		
-	//1- dynamic wait(if the page or element is loaded before the time set, selenium will ignore the rest of the time)
+	//1- dynamic wait(if the page or element is loaded before the  time set, selenium will ignore the rest of the time)
 		 	
 		//A- page load time out method(applicable to load the page):
 		driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
-		//B- implicitly wait method ( applicable to global page element)
+		//B- implicitly wait method ( applicable to global page webElements)
 		driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
 		//C- explicitly wait( applicable for specific elements(wait for specific element),long time wait)
 		    // we use the generic method explicitlyWait we have down

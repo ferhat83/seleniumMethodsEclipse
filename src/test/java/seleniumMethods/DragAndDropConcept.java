@@ -10,8 +10,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class DragAndDropConcept {
-	     //A-declare WebDriver as global variable
+	    //A-declare WebDriver as global variable
 	WebDriver driver = null;
+	
 	@BeforeMethod
 	public void setUp() {
 		//B-set chrome path
@@ -20,7 +21,7 @@ public class DragAndDropConcept {
 		driver= new ChromeDriver();
 	           // delete cookies
 	    driver.manage().deleteAllCookies();
-	    //D- navigate to the web site 
+	    //D- navigate to the web site  
 		driver.get("https://www.jqueryui.com/droppable/");
 		driver.manage().window().maximize();
 		}

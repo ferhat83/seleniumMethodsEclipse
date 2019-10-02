@@ -18,7 +18,7 @@ public class ElementVisibilityTest {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		
+		 
 		driver.get("https://reg.ebay.com/reg/PartialReg?ru=https%3A%2F%2Fwww.ebay.com%2F");
 		
 		//1- isDisplayed method(applicable for all elements)

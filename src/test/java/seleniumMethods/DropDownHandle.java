@@ -20,18 +20,18 @@ public class DropDownHandle {
 	public void setUp() {
 		//B-set chrome path
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\saadi\\eclipse-workspace\\seleniumAutomation\\SeleniumPractice\\driver\\chromeDriver\\chromedriver.exe");
-		
+		 
 		//C- instantiate the WebDrive
 		driver= new ChromeDriver();
 		
 		//D- navigate to the web site
-		driver.get("https://www.facebook.com/");
+		driver.get("https://www.facebook.com/"); 
 		}
 	//@Test
 	public void dropDown() {
 		WebElement month = driver.findElement(By.id("month"));
 		WebElement day = driver.findElement(By.id("day"));
-		WebElement year = driver.findElement(By.id("year"));
+		WebElement year = driver.findElement(By.id("year")); 
 		
 		      // 1st way using selectByVisibleText 
 //      Select select1 = new Select(month);
@@ -46,7 +46,7 @@ public class DropDownHandle {
 		  
 		      // 2nd way using selectByVisibleText and selectValueFromDropDown method
 		
-//		selectValueFromDropDown(month, "Oct");
+//	    selectValueFromDropDown(month, "Oct");
 //		selectValueFromDropDown(day, "10");
 //		selectValueFromDropDown(year, "1940");
 		
@@ -72,7 +72,7 @@ public class DropDownHandle {
 	    
 	    Select select1 = new Select(month);
 	    List<WebElement> monthsList = select1.getOptions();
-	    System.out.println(monthsList.size()); // we ge the size of months list
+	    System.out.println(monthsList.size()); // we get the size of months list
 	    for (int i=0; i<monthsList.size(); i++) {// we get months list and print it(you can do same with days&years)
 	    	String monthVal = monthsList.get(i).getText();
 	    	System.out.println(monthVal);
@@ -80,7 +80,7 @@ public class DropDownHandle {
 	    	if(monthVal.equals("Feb")) {
 	    		monthsList.get(i).click();
 	    		break;
-	    	} 	
+	    	} 	 
 	    }
 	     Select select2 = new Select(day);
 	    List<WebElement> daysList = select2.getOptions();
@@ -118,17 +118,17 @@ public class DropDownHandle {
 		     }
 	}
     
-@Test
-public void genericDropDowTest() {
+     @Test
+     public void genericDropDowTest() {
     
-    String monthXpath="//select[@id='month']//option";
- 	String dayXpath="//select[@id='day']//option";
- 	String yearXpath="//select[@id='year']//option";
+          String monthXpath="//select[@id='month']//option";
+ 	      String dayXpath="//select[@id='day']//option";
+ 	      String yearXpath="//select[@id='year']//option";
  	
- 	genericDropDow(monthXpath,"May"); 
- 	genericDropDow(dayXpath,"29"); 
- 	genericDropDow(yearXpath,"2000"); 
-}
+ 	      genericDropDow(monthXpath,"May"); 
+ 	      genericDropDow(dayXpath,"29"); 
+ 	      genericDropDow(yearXpath,"2000"); 
+        }
 	
 	    	 
 	     
