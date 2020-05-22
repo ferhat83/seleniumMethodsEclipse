@@ -24,7 +24,7 @@ public class RdioButton {
 		List<WebElement> radioButtons = driver.findElements(By.xpath("//input[@type='radio']"));// return list of radio button
 		
 		//use for loop to get the radioBotton values and click on them.
-		for(int i=0;i<radioButtons.size();i++) {
+		for(int i=0; i<radioButtons.size(); i++) {
 			WebElement radioElement = radioButtons.get(i);// get values
 			String radioValue = radioElement.getAttribute("value");// store the values in Strings
 			System.out.println("the values of radionBottons are :"+radioValue);
@@ -33,6 +33,7 @@ public class RdioButton {
 			   // click on a specific radioBatton
 			if(radioValue.equalsIgnoreCase("Male")) {
 				radioElement.click();
+				
 				
 			} 
 			

@@ -29,7 +29,7 @@ public class BrokenLinks {
 		driver.get("https://www.express-scripts.com/");
 	}
 	@Test
-	public void brokenLinkTest() throws MalformedURLException, IOException {
+	public void brokenLinkTest() throws MalformedURLException, IOException { 
 		//get links
 		List<WebElement> linksList = driver.findElements(By.tagName("a"));
 		linksList.addAll(driver.findElements(By.tagName("img")));

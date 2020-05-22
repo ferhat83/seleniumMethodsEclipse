@@ -36,7 +36,7 @@ public class PopUpAlertHandle {
 			   System.out.println("correct alert messag");
 			   }
 		       else {System.out.println("incorrect alert messag");
-		   }
+		   } 
 		   
 		   
 		   alert.accept();// click on OK

@@ -20,7 +20,7 @@ public class ElementVisibilityTest {
 		driver.manage().deleteAllCookies();
 		 
 		driver.get("https://reg.ebay.com/reg/PartialReg?ru=https%3A%2F%2Fwww.ebay.com%2F");
-		
+		 
 		//1- isDisplayed method(applicable for all elements)
 		boolean b1 = driver.findElement(By.id("ppaFormSbtBtn")).isDisplayed();
 		System.out.println(b1);//return true

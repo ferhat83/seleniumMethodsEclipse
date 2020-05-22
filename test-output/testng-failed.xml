@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.Verizon">
+      <class name="dataProvideur.DataProvideurFreeCRM">
         <methods>
-          <include name="verizonNews"/>
           <include name="setUp"/>
-          <include name="cleanUP"/>
+          <include name="createNewContactFreeCRM"/>
+          <include name="closeUp"/>
         </methods>
-      </class> <!-- practice.Verizon -->
+      </class> <!-- dataProvideur.DataProvideurFreeCRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -21,7 +21,7 @@ public class CheckBox {
 		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("http://demo.automationtesting.in/Register.html");
-		}
+		} 
 		
 	@Test(enabled = true)
 	public void checkBoxSelection() throws InterruptedException {

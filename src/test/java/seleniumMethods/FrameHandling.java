@@ -32,7 +32,7 @@ public class FrameHandling {
 		for(WebElement frame : totalIframe ) {
 			System.out.println(frame.getText());
 		}
-		
+		 
 		
 		// switch to frame to be able to work on it
 //		driver.switchTo().frame("iframe2");

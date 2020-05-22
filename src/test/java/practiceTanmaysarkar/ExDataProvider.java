@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class Sample1 {
+public class ExDataProvider {
 	WebDriver driver = null;
 	@BeforeMethod
 	public void setUp() {

@@ -20,7 +20,7 @@ public class MultipleWindowsHandling {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(50,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		
+		 
 		
 		driver.get("http://demo.automationtesting.in/Windows.html");
 	}

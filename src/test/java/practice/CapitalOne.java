@@ -1,5 +1,6 @@
 package practice;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -28,7 +29,7 @@ public class CapitalOne {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		driver.get("https://www.capitalone.com/");
+		driver.get("https://www.capitalone.com/"); 
 	}
 	@Test(enabled = false, priority = 1)
 	public void signIn() {
@@ -42,16 +43,33 @@ public class CapitalOne {
 		driver.findElement(By.xpath("//input[contains(@type,'password')]")).sendKeys("abcdefg");
 		driver.findElement(By.xpath("//button[text()='Sign In']")).click();
 	}
-	@Test(enabled = true, priority = 2)
+	@Test(enabled = false, priority = 2)
 	public void creditCard() {
 		WebElement creditCard = driver.findElement(By.xpath("//a[@id = 'card']//span[text()='Credit Cards']"));
 		Actions act1 = new Actions(driver);
 		act1.moveToElement(creditCard).click().build().perform();
 	   
 	}
-	
-	@AfterMethod
-	public void cleanUp() throws InterruptedException {
+	@Test(enabled = true)
+	public void productList() {
+		List<WebElement> product = driver.findElements(By.xpath("//div[@id='footer-products-section']//li"));
+//		for(WebElement productElements : product) {
+//			System.out.println(productElements.getText());
+//			if(productElements.getTagName().equals("Credit Cards")) {
+//				productElements.click();
+//				break;
+//			}
+//		}
+		for( int i=0; i<product.size(); i++) {
+			if(product.get(i).getText().equals("Credit Cards")) {
+				product.get(i).click();
+			}
+		}
+			
+		
+	}
+	@AfterMethod(enabled = false)
+	public void cleanUp() throws InterruptedException { 
 		Thread.sleep(3000);
 		driver.close();
 		driver.quit();

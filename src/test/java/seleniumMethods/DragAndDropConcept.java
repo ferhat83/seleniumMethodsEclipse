@@ -19,13 +19,13 @@ public class DragAndDropConcept {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\saadi\\eclipse-workspace\\seleniumAutomation\\SeleniumPractice\\driver\\chromeDriver\\chromedriver.exe");
 		//C- instantiate the WebDrive
 		driver= new ChromeDriver();
-	           // delete cookies
+	           // delete cookies 
 	    driver.manage().deleteAllCookies();
 	    //D- navigate to the web site  
 		driver.get("https://www.jqueryui.com/droppable/");
 		driver.manage().window().maximize();
 		}
-	
+	 
 	 @Test
 	 public void dragAndDrop() {
 		 

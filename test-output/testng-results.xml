@@ -1,25 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="72405" started-at="2019-10-02T20:40:32Z" finished-at="2019-10-02T20:41:44Z">
+  <suite name="Default suite" duration-ms="187949" started-at="2020-05-22T03:10:55Z" finished-at="2020-05-22T03:14:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="72405" started-at="2019-10-02T20:40:32Z" finished-at="2019-10-02T20:41:44Z">
-      <class name="seleniumMethods.BrokenLinks">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumMethods.BrokenLinks@224edc67]" name="setUp" is-config="true" duration-ms="8728" started-at="2019-10-02T20:40:32Z" finished-at="2019-10-02T20:40:40Z">
+    <test name="Default test" duration-ms="187949" started-at="2020-05-22T03:10:55Z" finished-at="2020-05-22T03:14:03Z">
+      <class name="dataProvideur.DataProvideurFreeCRM">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="setUp" is-config="true" duration-ms="8439" started-at="2020-05-22T03:10:55Z" finished-at="2020-05-22T03:11:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="brokenLinkTest()[pri:0, instance:seleniumMethods.BrokenLinks@224edc67]" name="brokenLinkTest" duration-ms="58552" started-at="2019-10-02T20:40:40Z" finished-at="2019-10-02T20:41:39Z">
+        <test-method status="PASS" signature="createNewContactFreeCRM(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="createNewContactFreeCRM" duration-ms="18451" started-at="2020-05-22T03:11:04Z" data-provider="getTestData" finished-at="2020-05-22T03:11:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[youcef]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hargas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vertussa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Lead]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- brokenLinkTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:seleniumMethods.BrokenLinks@224edc67]" name="cleanUp" is-config="true" duration-ms="5096" started-at="2019-10-02T20:41:39Z" finished-at="2019-10-02T20:41:44Z">
+        </test-method> <!-- createNewContactFreeCRM -->
+        <test-method status="PASS" signature="closeUp()[pri:0, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="closeUp" is-config="true" duration-ms="759" started-at="2020-05-22T03:11:22Z" finished-at="2020-05-22T03:11:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- seleniumMethods.BrokenLinks -->
+        </test-method> <!-- closeUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="setUp" is-config="true" duration-ms="17808" started-at="2020-05-22T03:11:23Z" finished-at="2020-05-22T03:11:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createNewContactFreeCRM(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="createNewContactFreeCRM" duration-ms="28929" started-at="2020-05-22T03:11:41Z" data-provider="getTestData" finished-at="2020-05-22T03:12:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samir]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ait ourab]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[google]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Lead]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewContactFreeCRM -->
+        <test-method status="PASS" signature="closeUp()[pri:0, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="closeUp" is-config="true" duration-ms="759" started-at="2020-05-22T03:12:10Z" finished-at="2020-05-22T03:12:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="setUp" is-config="true" duration-ms="20836" started-at="2020-05-22T03:12:11Z" finished-at="2020-05-22T03:12:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createNewContactFreeCRM(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="createNewContactFreeCRM" duration-ms="40963" started-at="2020-05-22T03:12:31Z" data-provider="getTestData" finished-at="2020-05-22T03:13:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nacer ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[zimu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[amazon]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Contact]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewContactFreeCRM -->
+        <test-method status="PASS" signature="closeUp()[pri:0, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="closeUp" is-config="true" duration-ms="729" started-at="2020-05-22T03:13:12Z" finished-at="2020-05-22T03:13:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="setUp" is-config="true" duration-ms="15884" started-at="2020-05-22T03:13:13Z" finished-at="2020-05-22T03:13:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createNewContactFreeCRM(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="createNewContactFreeCRM" duration-ms="33159" started-at="2020-05-22T03:13:29Z" data-provider="getTestData" finished-at="2020-05-22T03:14:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ferhat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[saadi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[adp]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Contact]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewContactFreeCRM -->
+        <test-method status="PASS" signature="closeUp()[pri:0, instance:dataProvideur.DataProvideurFreeCRM@548e7350]" name="closeUp" is-config="true" duration-ms="756" started-at="2020-05-22T03:14:02Z" finished-at="2020-05-22T03:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+      </class> <!-- dataProvideur.DataProvideurFreeCRM -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -22,7 +22,7 @@ public class MouseOverConcept {
 			driver= new ChromeDriver();
 		          // delete cookies
 			driver.manage().deleteAllCookies();
-			
+			 
 			//D- navigate to the web site
 			driver.get("https://www.spicejet.com/");
 			driver.manage().window().maximize(); 

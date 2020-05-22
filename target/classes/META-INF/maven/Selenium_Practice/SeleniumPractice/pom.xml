@@ -25,6 +25,44 @@
    	<artifactId>commons-io</artifactId>
    	<version>2.6</version>
    </dependency>
+   <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.1.0</version>
+	</dependency>
+	
+		<!-- more dependencies for the Excel-file reader    -->
+	   
+	   
+	   <dependency>
+	<groupId>commons-io</groupId>
+	<artifactId>commons-io</artifactId>
+	<version>2.6</version>
+	</dependency>
+	
+	<dependency>
+	<groupId>org.apache.poi</groupId>
+	<artifactId>poi-ooxml-schemas</artifactId>
+	<version>4.1.1</version>
+	</dependency>
+	<dependency>
+	<groupId>org.apache.poi</groupId>
+	<artifactId>poi-scratchpad</artifactId>
+	<version>4.1.1</version>
+	</dependency>
+	
+	<dependency>
+	<groupId>org.apache.poi</groupId>
+	<artifactId>openxml4j</artifactId>
+	<version>1.0-beta</version>
+	</dependency>
+	
+	<dependency>
+	<groupId>io.github.bonigarcia</groupId>
+	<artifactId>webdrivermanager</artifactId>
+	<version>3.6.2</version>
+	<scope>compile</scope>
+	</dependency>
  </dependencies>
   
 </project>

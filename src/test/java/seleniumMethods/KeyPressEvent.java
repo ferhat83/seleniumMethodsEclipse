@@ -18,7 +18,7 @@ public class KeyPressEvent {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://the-internet.herokuapp.com/key_presses");
 		driver.manage().window().maximize();
-		  
+		   
 		//KeyPressEvent we have 2 options
 		  // option1: use send keys method
 		driver.findElement(By.id("target")).sendKeys(Keys.BACK_SPACE);

@@ -31,7 +31,7 @@ public class PopUpWindowHandling {
 		System.out.println("parent window id is: " + parentWindowId);
 		//get child window id
 		String chilWindowId = iterat1.next();
-		System.out.println("child window id is: " + chilWindowId);
+		System.out.println("child window id is: " + chilWindowId); 
 		// switch to child window
 		driver.switchTo().window(chilWindowId); 
 		//get title of child window and close it
@@ -40,6 +40,7 @@ public class PopUpWindowHandling {
 		//switch back to parent window and get title 
 		driver.switchTo().window(parentWindowId);
 		System.out.println("parent window title: " + driver.getTitle());
+		
 		
 		Thread.sleep(3000);
 		driver.close();

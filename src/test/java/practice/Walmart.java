@@ -22,27 +22,17 @@ public class Walmart {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		driver.get("https://www.walmart.com/");
+		driver.get(" ");
 		}
+
 	@Test(enabled = true)
-	public void humburgerButon() throws InterruptedException {
-		driver.findElement(By.xpath("//button[@class='f_a ak_c f_c']")).click();
-		
-		Actions act1 = new Actions(driver);
-		WebElement haloween = driver.findElement(By.xpath("//span[text()='Halloween']"));
-		act1.moveToElement(haloween).build().perform();
-		Thread.sleep(3000);
-		
-		List<WebElement> haloweenList = driver.findElements(By.xpath("//div[@id='dept-tjBZNglU-children']//a"));
-		System.out.println("haloween list have " + haloweenList.size() + " elements:"); 
-		for(WebElement haloween1 : haloweenList) {
-			String haloweenListText = haloween1.getText();
-			System.out.println(haloweenListText);
-			if(haloweenListText.equalsIgnoreCase("Kids' Costumes")) {
-				haloween1.click();
-			}
-		 }
+	public void listElements() { 
+	 List<WebElement> tempCategoriTitle = driver.findElements(By.xpath("//div[@id='HomePage-contentZone12-FeaturedCategoriesCollapsible-expander']//div[@class='TempoCategoryTile-tile valign-top']"));
+	 for(WebElement TitlesList : tempCategoriTitle ) {
 		 
+		 TitlesList.click();
+		 
+	 }
 	}
 	
 	

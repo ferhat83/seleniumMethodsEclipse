@@ -1,4 +1,4 @@
-package freeCrmPractice;
+package tablefreeCrmPractice;
 
 import java.util.concurrent.TimeUnit;
 

@@ -23,7 +23,7 @@ public class GetHtmlTags {
 		List<WebElement> linklist = driver.findElements(By.tagName("a"));
 
 		//get the size of the linklist
-		System.out.println(linklist.size());
+		System.out.println(linklist.size()); 
  
 		for(int i=0; i<linklist.size();i++) {
 		System.out.println(linklist.get(i).getText());
