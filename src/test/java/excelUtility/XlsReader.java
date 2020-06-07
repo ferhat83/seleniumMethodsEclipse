@@ -14,9 +14,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class XlsReader {
 	public String path;
-	public FileInputStream fis = null; // used to read data on files
+	public FileInputStream fis = null;      // used to read data on files
 	public FileOutputStream fileOut = null; // write data on files
-	private XSSFWorkbook workbook = null; // used for connexion to xl files 
+	private XSSFWorkbook workbook = null;   // used for connexion to xl files 
 	private XSSFSheet sheet = null; 
 	private XSSFRow row = null;
 	private XSSFCell cell = null;
@@ -46,7 +46,6 @@ public class XlsReader {
 		int number = sheet.getLastRowNum() + 1;//we put +1 because index start by 0
 		return number;
 		}
-
 	}
 
       // get cel data

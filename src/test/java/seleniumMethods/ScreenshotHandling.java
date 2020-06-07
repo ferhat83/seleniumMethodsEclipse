@@ -27,6 +27,7 @@ public class ScreenshotHandling {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// save the file in desired location:
 		FileUtils.copyFile(src, new File("C:\\Users\\saadi\\Desktop\\Screenshot\\google.png"));
+		
 		// NB:at the end of the path you need to add name to that file ex: \\google.png
 		driver.close();
 		

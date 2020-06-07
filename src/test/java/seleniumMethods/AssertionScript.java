@@ -10,7 +10,7 @@ public class AssertionScript {
 
     @Test(enabled = false,priority = 1)
     public void  test1() {//expect an AssertionError will be thrown  ; this assertion it is called hard assertion
-    	Assert.assertEquals(12,13); // hard Assertd
+    	Assert.assertEquals(12,13); // hard Asserted
     	
     }
 
